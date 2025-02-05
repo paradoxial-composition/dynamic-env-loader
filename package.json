@@ -1,21 +1,45 @@
 {
-  "name": "dynamic-env-loader",
+  "name": "@paradoxial-composition/dynamic-env-loader",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A package that dynamically loads environment variables based on the current environment.",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "env",
+    "environment",
+    "loader",
+    "dotenv"
+  ],
+  "author": "elbani.othman@gmail.com",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.7"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.13.1",
     "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
-  }
+  },
+  "jest": {
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "testEnvironment": "node",
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ]
+}
 }
