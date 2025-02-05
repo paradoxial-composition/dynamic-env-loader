@@ -1,6 +1,6 @@
 {
   "name": "dynamic-env-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package that dynamically loads environment variables based on the current environment.",
   "main": "dist/index.js",
   "files": [
