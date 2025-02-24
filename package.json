@@ -1,19 +1,21 @@
 {
   "name": "dynamic-env-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package that dynamically loads environment variables based on the current environment.",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "keywords": [
     "env",
     "environment",
     "loader",
-    "dotenv"
+    "dotenv",
+    "typescript"
   ],
   "author": "elbani.othman@gmail.com",
   "license": "MIT",
@@ -29,17 +31,17 @@
     "typescript": "^5.7.3"
   },
   "jest": {
-  "transform": {
-    "^.+\\.tsx?$": "ts-jest"
-  },
-  "testEnvironment": "node",
-  "moduleFileExtensions": [
-    "ts",
-    "tsx",
-    "js",
-    "jsx",
-    "json",
-    "node"
-  ]
-}
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
 }

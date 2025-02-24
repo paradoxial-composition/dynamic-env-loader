@@ -40,7 +40,7 @@ export default class DynamicEnvLoader {
     const result = dotenv.config({ path: this.envFilePath });
 
     if (result.error) {
-      console.warn(`Failed to load environment variables from ${this.envFilePath}. Using fallback values.`);
+      console.warn(`Failed to load environment variables from ${this.envFilePath}, Using fallback values.`);
     }
   }
 
